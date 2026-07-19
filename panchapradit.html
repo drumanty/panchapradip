@@ -24,19 +24,12 @@
             <!-- Logo Image & Nav Links -->
             <div class="flex items-center gap-12">
                 <a href="#" class="flex items-center">
-                    <!-- Updated to relative path -->
-                    <img src="Pancha Pradip Logo.jpg" alt="PanchaPradip Logo" class="h-8 w-auto object-contain" style="width: 100px; height: 100px; margin-left: 550px; margin-top: 10px;">
+                    <!-- Cleaned up inline positioning styles to use proper Tailwind classes -->
+                    <img src="panchapradip\Pancha Pradip Logo.jpg" alt="PanchaPradip Logo" class="h-12 w-auto object-contain" style="width: 100px; height: 100px; margin-top: 10px; margin-left: 550px;">
                 </a>
-                
             </div>
 
-            
-            <!-- Actions -->
-            <div class="flex items-center gap-6">
-                <a href="#" class="bg-[#F59E0B] hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-full shadow-sm transition-colors">
-                    Contact Us
-                </a>
-            </div>
+         
 
         </div>
     </header>
@@ -47,7 +40,7 @@
         <!-- Hero Title Section -->
         <section class="text-center max-w-2xl mx-auto mb-16">
             <h1 class="text-4xl md:text-5xl font-bold text-[#F59E0B] tracking-tight mb-4">
-                Premium Incense & Fragrance Collection Sticks
+                Premium Incense & Fragrance Collection 
             </h1>
             <p class="text-gray-600 text-lg leading-relaxed font-normal">
                 Discover our latest collection of premium incense and fragrance sticks &mdash; quality, aroma, and craftsmanship in every piece.
@@ -59,53 +52,66 @@
             
             <!-- Card 1 -->
             <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
-                <div class="aspect-square bg-gray-100 overflow-hidden group">
-                    <img src="product1.jpeg" alt="Volt Edge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\madmax.jpg" alt="Volt Edge" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div class="mb-4">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Volt Edge</h3>
-                        <p class="text-xl font-bold text-gray-900">$119.00</p>
-                    </div>
-                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                        Add to Cart
-                    </button>
-                </div>
+                
             </div>
 
             <!-- Card 2 -->
             <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
-                <div class="aspect-square bg-gray-900 overflow-hidden group">
-                    <img src="product2.jpg" alt="Zenith Flow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\fresheasy.jpg" alt="Zenith Flow" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div class="mb-4">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Zenith Flow</h3>
-                        <p class="text-xl font-bold text-gray-900">$129.00</p>
-                    </div>
-                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                        Add to Cart
-                    </button>
-                </div>
+                
             </div>
 
             <!-- Card 3 -->
             <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
-                <div class="aspect-square bg-[#E8C5C8] overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600" alt="Street Vibe Low" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\zeedblue.jpg" alt="Street Vibe Low" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-6 flex-1 flex flex-col justify-between">
-                    <div class="mb-4">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Street Vibe Low</h3>
-                        <p class="text-xl font-bold text-gray-900">$69.00</p>
-                    </div>
-                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
-                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
-                        Add to Cart
-                    </button>
+                
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\moksh.jpg" alt="Volt Edge" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
+                
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\baul.jpg" alt="Zenith Flow" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <!-- Changed aspect-square to aspect-[3/4] for a vertical layout, added p-4 padding -->
+                <div class="aspect-[3/4] bg-gray-50 overflow-hidden group p-4 flex items-center justify-center">
+                    <!-- Changed object-cover to object-contain so nothing gets cut off -->
+                    <img src="panchapradip\sanskar.jpg" alt="Street Vibe Low" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+                </div>
+                
             </div>
 
         </section>
@@ -117,20 +123,14 @@
             
             <!-- Footer Logo Image -->
             <div class="flex items-center">
-                <!-- Updated to relative path -->
-                <img src="Pancha Pradip Logo.jpg" alt="PanchaPradip Logo Footer" class="h-8 w-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all">
+                <img src="panchapradip\Pancha Pradip Logo.jpg" alt="PanchaPradip Logo Footer" class="h-8 w-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all">
             </div>
 
-            <!-- Footer Links -->
-            <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-500">
-                <a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a>
-                <a href="#" class="hover:text-gray-900 transition-colors">Contact Support</a>
-            </div>
+            
 
             <!-- Copyright info -->
             <p class="text-sm text-gray-400">
-                &copy; 2026 PanchaPradip. All rights reserved.
+                &copy; 2026 rumusolution. All rights reserved.
             </p>
 
         </div>
