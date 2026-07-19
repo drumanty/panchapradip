@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanchaPradip</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons for clean, vector icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="border-b border-gray-100 sticky top-0 bg-white z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-4">
+            
+            <!-- Logo Image & Nav Links -->
+            <div class="flex items-center gap-12">
+                <a href="#" class="flex items-center">
+                    <!-- Updated to relative path -->
+                    <img src="Pancha Pradip Logo.jpg" alt="PanchaPradip Logo" class="h-8 w-auto object-contain" style="width: 100px; height: 100px; margin-left: 550px; margin-top: 10px;">
+                </a>
+                
+            </div>
+
+            
+            <!-- Actions -->
+            <div class="flex items-center gap-6">
+                <a href="#" class="bg-[#F59E0B] hover:bg-amber-600 text-white font-medium px-5 py-2.5 rounded-full shadow-sm transition-colors">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow">
+        
+        <!-- Hero Title Section -->
+        <section class="text-center max-w-2xl mx-auto mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#F59E0B] tracking-tight mb-4">
+                Premium Incense & Fragrance Collection Sticks
+            </h1>
+            <p class="text-gray-600 text-lg leading-relaxed font-normal">
+                Discover our latest collection of premium incense and fragrance sticks &mdash; quality, aroma, and craftsmanship in every piece.
+            </p>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Card 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <div class="aspect-square bg-gray-100 overflow-hidden group">
+                    <img src="product1.jpeg" alt="Volt Edge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Volt Edge</h3>
+                        <p class="text-xl font-bold text-gray-900">$119.00</p>
+                    </div>
+                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <div class="aspect-square bg-gray-900 overflow-hidden group">
+                    <img src="product2.jpg" alt="Zenith Flow" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Zenith Flow</h3>
+                        <p class="text-xl font-bold text-gray-900">$129.00</p>
+                    </div>
+                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden border border-gray-100 shadow-sm flex flex-col">
+                <div class="aspect-square bg-[#E8C5C8] overflow-hidden group">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600" alt="Street Vibe Low" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div class="mb-4">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Street Vibe Low</h3>
+                        <p class="text-xl font-bold text-gray-900">$69.00</p>
+                    </div>
+                    <button class="w-full bg-[#F59E0B] hover:bg-amber-600 text-white font-medium py-3 rounded-full flex items-center justify-center gap-2 transition-colors">
+                        <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-50 border-t border-gray-100 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            
+            <!-- Footer Logo Image -->
+            <div class="flex items-center">
+                <!-- Updated to relative path -->
+                <img src="Pancha Pradip Logo.jpg" alt="PanchaPradip Logo Footer" class="h-8 w-auto object-contain grayscale opacity-75 hover:grayscale-0 hover:opacity-100 transition-all">
+            </div>
+
+            <!-- Footer Links -->
+            <div class="flex flex-wrap justify-center gap-8 text-sm font-medium text-gray-500">
+                <a href="#" class="hover:text-gray-900 transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-gray-900 transition-colors">Contact Support</a>
+            </div>
+
+            <!-- Copyright info -->
+            <p class="text-sm text-gray-400">
+                &copy; 2026 PanchaPradip. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
